@@ -23,7 +23,7 @@ const SideNav = () => {
           <Link to={"/appOne"}>Application 1</Link>
         </Menu.Item>
         <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-          <Link to={"/appTwo"}>Application 2</Link>
+          <Link to={"/todo"}>Todo App</Link>
         </Menu.Item>
       </Menu>
     </Sider>

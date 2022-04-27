@@ -13,6 +13,7 @@ import Landing from "../components/Landing";
 
 const App = () => {
   const AppOneRouter = React.lazy(() => import("appOne/AppOneRouter"));
+  const TodoApp = React.lazy(() => import("todoApp/App"));
 
   return (
     <Layout className="h-screen">
@@ -26,6 +27,14 @@ const App = () => {
                   <Route index element={<Landing />} />
                   <Route
                     path="appOne/*"
+                    element={
+                      <React.Suspense fallback={<div>Loading...</div>}>
+                        <AppOneRouter />
+                      </React.Suspense>
+                    }
+                  />
+                  <Route
+                    path="todo/*"
                     element={
                       <React.Suspense fallback={<div>Loading...</div>}>
                         <AppOneRouter />

@@ -46,6 +46,7 @@ module.exports = {
       remotes: {
         shell: "shell@http://localhost:3000/remoteEntry.js",
         appOne: "appOne@http://localhost:3001/remoteEntry.js",
+        todoApp: "todoApp@http://localhost:3003/remoteEntry.js",
       },
       exposes: {
         "./shellContext": "./contexts/SideNavCtx",
