@@ -37,7 +37,7 @@ const App = () => {
                     path="todo/*"
                     element={
                       <React.Suspense fallback={<div>Loading...</div>}>
-                        <AppOneRouter />
+                        <TodoApp />
                       </React.Suspense>
                     }
                   />

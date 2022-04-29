@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  shell:
+    build:
+      dockerfile: Dockerfile
+      context: './shell'
+    ports:
+      - "3000:3000"
+  app-one:
+    build:
+      dockerfile: Dockerfile
+      context: './app-one'
+    ports:
+      - "3001:3001"
+  context-ts:
+    build:
+      dockerfile: Dockerfile
+      context: './context-ts'
+    ports:
+      - "3003:3003"
